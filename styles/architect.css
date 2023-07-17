@@ -53,7 +53,7 @@ nav li a {
 
 /* banner style */
 .banner-content {
-    width: 800px;
+    width: 50%;
     text-align: center;
     margin: 0 auto;
 }
@@ -79,46 +79,11 @@ nav li a {
     width: 100%;
 }
 
-/* Responsive media query */
-@media screen and (max-width:576px) {
-    header {
-        padding: 20px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .banner-content {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-}
-
-/* tablet or medium devices */
-@media screen and (min-width:576px) and (max-width:992px) {
-    header {
-        padding: 10px;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    .banner-content {
-        width: 100%;
-        text-align: center;
-        margin: 0 auto;
-    }
-}
-
 /* Main Section style */
 main {
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 50px 240px;
+    margin: 70px auto;
+    /* padding: 50px 240px; */
 }
 
 /* teams style section */
@@ -126,7 +91,7 @@ main {
 .teams-container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .teams-img-container {
@@ -155,6 +120,61 @@ main {
 
 .teams-description {
     color: #727272;
-    font-size:1rem;
+    /* font-size: 1rem; */
     font-weight: 400;
+}
+
+
+/* Responsive media query */
+@media screen and (max-width:576px) {
+
+    /* header responsive style for mobile */
+    header
+    {
+        padding: 20px;
+    }
+
+    nav,
+    .teams-container {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .teams-content {
+        padding: 20px;
+        height:100%;
+    }
+
+    .teams-img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+}
+
+/* tablet or medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    /* header responsive style for tablet */
+    header {
+        padding: 10px;
+    }
+
+    nav,
+    .teams-container
+    {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    /* teams section styles */
+
 }
